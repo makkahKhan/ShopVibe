@@ -1,7 +1,7 @@
 "use client"
 
 import { Search } from "lucide-react";
-import React, { useState } from 'react'
+import React, { useState, Suspense } from 'react'
 import Image from "next/image";
 import '../globals.css'
 import products from '@/data/Products'
@@ -14,8 +14,7 @@ import toast from "react-hot-toast";
 
 
 
-
-const page = () => {
+const ProductContent = () => {
 const [search , setSearch] = useState("");
 const [searchText , setSearchText] = useState("");
 const searchParams = useSearchParams();
@@ -162,4 +161,12 @@ const filterProducts = products.filter((pro) => {
     );
 };
 
-export default page;
+const Page = () => {
+  return (
+    <Suspense fallback={<div className="text-center py-10">Loading...</div>}>
+      <ProductContent />
+    </Suspense>
+  );
+};
+
+export default Page;
