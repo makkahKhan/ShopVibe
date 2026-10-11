@@ -5,22 +5,60 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+h1,
+h2,
+h3 {
+  font-family: var(--font-philosopher);
+  color : #2f4858;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    font-family: var(--font-poppins);
+     color : #454b4f;
+
+}
+
+
+.divider-triangle {
+    border: 1px solid #5a8f7b;
+    display: inline-block;
+    opacity: .4;
+    position: relative;
+    width: 200px;
+}
+
+ .divider-triangle:before {
+    content: "";
+    height: 18px;
+    opacity: .4;
+    position: absolute;
+    top: -9px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 18px;
+}
+
+.divider-triangle:before {
+    background-color: #5a8f7b;
+    right: 50%;
+}
+
+.divider-triangle:after {
+    background: #5a8f7b;
+    left: 45%;
+}
+
+.divider-triangle:after, .divider-triangle:before {
+    content: "";
+    height: 18px;
+    opacity: .4;
+    position: absolute;
+    top: -9px;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 18px;
 }

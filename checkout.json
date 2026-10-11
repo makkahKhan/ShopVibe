@@ -1,0 +1,154 @@
+[
+  {
+    "name": "Almakkah malik01 Almakkah Mlik01",
+    "email": "almakkahmalikkhan@gmail.com",
+    "number": "345678943",
+    "address": "p.c.h.s karachi",
+    "city": "karachi"
+  },
+  {
+    "name": "Alomi khan",
+    "email": "alomi@gmail.com",
+    "number": "345678943",
+    "address": "p.c.h.s karachi",
+    "city": "karachi",
+    "cartItems": null,
+    "shipping": 150
+  },
+  {
+    "name": "Alomi khan",
+    "email": "alomi@gmail.com",
+    "number": "345678943",
+    "address": "p.c.h.s karachi",
+    "city": "karachi",
+    "cartItems": [
+      {
+        "id": 3,
+        "img": "/assets/novels/islamic/1.png",
+        "title": "Allah k wali",
+        "des": "A heart-touching story of faith, love, and spiritual growth. It explores the journey of finding peace and strength through trust in Allah.",
+        "cat": "Islamic",
+        "price": 900,
+        "writer": "Khan Asif",
+        "quantity": 1
+      }
+    ],
+    "shipping": 0
+  },
+  {
+    "name": "Alomi khan",
+    "email": "alomi@gmail.com",
+    "number": "345678943",
+    "address": "p.c.h.s karachi",
+    "city": "karachi",
+    "cartItems": [
+      {
+        "id": 1,
+        "img": "/assets/novels/love/1.png",
+        "title": "Jannat Ke Pattay",
+        "des": "Haya’s journey takes her through love, faith, mystery, and self-discovery. A captivating story filled with unexpected twists and emotional moments.",
+        "writer": "Nimra Ahmed",
+        "cat": "Love",
+        "price": 1200,
+        "quantity": 1
+      }
+    ],
+    "shipping": 150
+  },
+  {
+    "name": "Alomi khan",
+    "email": "alomi@gmail.com",
+    "number": "345678943",
+    "address": "p.c.h.s karachi",
+    "city": "karachi",
+    "cartItems": [
+      {
+        "id": 2,
+        "img": "/assets/novels/crime/1.png",
+        "title": "Purani Haweli",
+        "des": ": A mysterious story filled with secrets, emotions, and unexpected twists. An intriguing journey through an old mansion where every corner hides a new mystery.",
+        "cat": "Crime",
+        "price": 950,
+        "writer": "Nimra Ahmed",
+        "quantity": 1
+      }
+    ],
+    "shipping": 0
+  },
+  {
+    "name": "Alomi khan",
+    "email": "alomi@gmail.com",
+    "number": "345678943",
+    "address": "p.c.h.s karachi",
+    "city": "karachi",
+    "cartItems": [
+      {
+        "id": 2,
+        "img": "/assets/novels/crime/1.png",
+        "title": "Purani Haweli",
+        "des": ": A mysterious story filled with secrets, emotions, and unexpected twists. An intriguing journey through an old mansion where every corner hides a new mystery.",
+        "cat": "Crime",
+        "price": 950,
+        "writer": "Nimra Ahmed",
+        "quantity": 2
+      },
+      {
+        "id": 1,
+        "img": "/assets/novels/love/1.png",
+        "title": "Jannat Ke Pattay",
+        "des": "Haya’s journey takes her through love, faith, mystery, and self-discovery. A captivating story filled with unexpected twists and emotional moments.",
+        "writer": "Nimra Ahmed",
+        "cat": "Love",
+        "price": 1200,
+        "quantity": 1
+      },
+      {
+        "id": 3,
+        "img": "/assets/novels/islamic/1.png",
+        "title": "Allah k wali",
+        "des": "A heart-touching story of faith, love, and spiritual growth. It explores the journey of finding peace and strength through trust in Allah.",
+        "cat": "Islamic",
+        "price": 900,
+        "writer": "Khan Asif",
+        "quantity": 1
+      }
+    ],
+    "shipping": 0
+  },
+  {
+    "name": "",
+    "email": "",
+    "number": "",
+    "address": "",
+    "city": "",
+    "cartItems": [],
+    "shipping": 0
+  },
+  {
+    "name": "",
+    "email": "",
+    "number": "",
+    "address": "",
+    "city": "",
+    "cartItems": [],
+    "shipping": 0
+  },
+  {
+    "name": "almakkah",
+    "email": "alomi@gmail.com",
+    "number": "03134353536",
+    "address": "p.c.h.s karachi",
+    "city": "karachi",
+    "cartItems": [],
+    "shipping": 0
+  },
+  {
+    "name": "Alomi khan",
+    "email": "alomi@gmail.com",
+    "number": "03234567891",
+    "address": "p.c.h.s karachi",
+    "city": "karachi",
+    "cartItems": [],
+    "shipping": 0
+  }
+]
