@@ -21,7 +21,7 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${philosopher.variable} ${poppins.variable}`}>
+      <body className={`${philosopher.variable} ${poppins.variable} min-h-screen flex flex-col `}>
          <ReduxProvider>
          <Navbar/>   
             {children} 
