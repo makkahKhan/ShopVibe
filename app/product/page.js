@@ -39,7 +39,7 @@ const filterProducts = products.filter((pro) => {
 
     return (
         <div>
-            {/* <section className="w-full h-[300px] flex justify-center items-center w-screen  bg-cover bg-bottom bg-no-repeat"
+           <section className="w-full h-[300px] flex justify-center items-center w-screen  bg-cover bg-bottom bg-no-repeat"
         style={{backgroundImage:"url('/assets/slide.png')"}}>
                 <div className="text-center">
                     <h1 className="text-4xl font-bold text-[#5a8f7b] mb-3">
@@ -50,7 +50,7 @@ const filterProducts = products.filter((pro) => {
                         Home / Shop
                     </p>
                 </div>
-            </section> */}
+            </section> 
 
             <section className="container mx-auto mt-[2rem]">
                <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 px-3">
