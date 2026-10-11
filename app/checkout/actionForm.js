@@ -40,8 +40,8 @@ export async function checkoutForm(prevState, formData) {
     return { success: false, field: "number", message: "Phone number is required", values };
   }
   if (!patterns.phone.test(number)) {
-    return { success: false, field: "number", message: "Please enter a valid phone number (e.g. 03001234567)", values };
-  }
+  return { success: false, field: "number", message: "Phone number must be 11 digits and start with 03 (e.g. 03001234567)", values };
+}
 
   // 4. ADDRESS
   if (!address) {
@@ -61,28 +61,41 @@ export async function checkoutForm(prevState, formData) {
 
   // ---- Everything is valid, now save the order ----
 
+  let cartItems = [];
+  try {
+    cartItems = JSON.parse(formData.get("cartItems") || "[]");
+  } catch (err) {
+    cartItems = [];
+  }
+
   const userData = {
     name,
     email,
     number,
     address,
     city,
-    cartItems: JSON.parse(formData.get("cartItems") || "[]"),
+    cartItems,
     shipping: Number(formData.get("shipping")) || 0,
   };
 
-  let submitData = [];
   try {
-    const data = await fs.readFile("checkout.json", "utf-8");
-    submitData = JSON.parse(data);
+    let submitData = [];
+    try {
+      const data = await fs.readFile("checkout.json", "utf-8");
+      submitData = JSON.parse(data);
+    } catch (err) {
+      // If the file is missing or empty, start with a new array
+      submitData = [];
+    }
+
+    submitData.push(userData);
+
+    await fs.writeFile("checkout.json", JSON.stringify(submitData, null, 2));
   } catch (err) {
-    // If the file is missing or empty, start with a new array
-    submitData = [];
+    // Vercel par file likhna allowed nahi, isliye order sirf logs mein dikhega
+    console.log("Could not save to file:", err.message);
+    console.log("New order:", userData);
   }
-
-  submitData.push(userData);
-
-  await fs.writeFile("checkout.json", JSON.stringify(submitData, null, 2));
 
   return { success: true };
 }

@@ -3,6 +3,7 @@
 import {useActionState, useState} from 'react'
 import { useDispatch, useSelector } from "react-redux";
 import {checkoutForm} from './actionForm'
+import { clearCart } from "@/Redux/CartSlice";
 import  Link  from 'next/link';
 const page = () => {
 const [shipping , setShipping] = useState(0);
@@ -197,6 +198,7 @@ console.log(items);
 
       <Link
         href="/"
+         onClick={() => dispatch(clearCart())}
         className="inline-block mt-6 bg-[#5a8f7b] text-white px-6 py-3 rounded-xl"
       >
         Continue Shopping
