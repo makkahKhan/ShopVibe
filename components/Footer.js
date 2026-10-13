@@ -30,7 +30,7 @@ const Footer = () => {
             </Link>
 
                                                 
-            <Link href="/novels" className="hover:text-[#a8d5c5] transition  text-gray-500">
+            <Link href="/product" className="hover:text-[#a8d5c5] transition  text-gray-500">
               Novels
             </Link>
 
@@ -38,8 +38,8 @@ const Footer = () => {
               About
             </Link>
 
-            <Link href="/contact" className="hover:text-[#a8d5c5] transition  text-gray-500">
-              Contact
+            <Link href="/blog" className="hover:text-[#a8d5c5] transition  text-gray-500">
+             Blog
             </Link>
           </div>
 

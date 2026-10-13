@@ -36,7 +36,7 @@ const Navbar = () => {
     <Link href="/" className='text-gray-500' onClick={() => setOpenMenu(false)}>Home</Link>
     <Link href="/product" className='text-gray-500'  onClick={() => setOpenMenu(false)}>Shop</Link>
     <Link href="/about" className='text-gray-500'  onClick={() => setOpenMenu(false)}>About</Link>
-    <Link href="/Blog" className='text-gray-500'  onClick={() => setOpenMenu(false)}>Blog</Link>
+    <Link href="/blog" className='text-gray-500'  onClick={() => setOpenMenu(false)}>Blog</Link>
   </div>
   )}
 </div>
